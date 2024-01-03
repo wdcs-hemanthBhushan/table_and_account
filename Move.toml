@@ -1,0 +1,16 @@
+[package]
+name = "table_and_account"
+version = "1.0.0"
+authors = []
+
+[addresses]
+my_addrx = "0x0d6672889db3afae4a5e742e4d3231f295547c6d317b00481183fd9499e7befe"
+#std="0x1"
+aptos_framework="0x1"
+#aptos_std
+aptos_token="0x3"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-framework/", rev="main" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-stdlib/", rev="main" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-token/", rev="main" }
